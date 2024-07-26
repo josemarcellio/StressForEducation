@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group 'com.josemarcellio.stresser'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+shadowJar {
+    archiveFileName = "StressForEducation.jar"
+    manifest {
+        attributes(
+                'Main-Class': 'com.josemarcellio.stresser.StressForEducation'
+        )
+    }
+}
