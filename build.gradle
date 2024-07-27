@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id "com.github.johnrengelman.shadow" version "7.1.2"
 }
 
 group 'com.josemarcellio.stresser'
@@ -10,10 +9,7 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-}
-
-shadowJar {
+jar {
     archiveFileName = "StressForEducation.jar"
     manifest {
         attributes(
